@@ -20,8 +20,8 @@ Curl is installed on the machine to send request.
 3. Execute broken-hashserve_win.exe
 4. Using curl application run the following command
 
-curl -X POST -H "application/json" -d "{\"password\":\"angrymonkey\"}" http://127.0.0.1:8088/hash
-5. Note the quotes inside the json object needs to be escaped on windows machine.  
+curl -X POST -H "application/json" -d "{\"password\\":\"angrymonkey\"}" http://127.0.0.1:8088/hash
+5. Esnure that the quotes inside the json object needs to be escaped on windows machine.  
  
 
 ## Expected Result
