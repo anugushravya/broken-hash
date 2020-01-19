@@ -2,54 +2,31 @@
 
 ## Description
 
-The description should tell the tester what they’re going to test and include any other pertinent information such as the test environment, test data, and preconditions/assumptions.
+A POST to /hash should accept a password.  It should return a job identifier immediately.  It should then wait 5 seconds and compute the password hash. The hashing algorithm should be SHA512.
 
 ### Precondition
 
-Any preconditions that must be met prior to the test being executed.
+The hash application should be listening at PORT 8088 and ready to accept curl request
 
 ### Assumptions
 
-Any assumptions that apply to the test
+Hash application is running on windows machine.
+Curl is installed on the machine to send request.
 
 ## Test Steps
 
-The test steps should include the data and information on how to execute the test.  
+1. Open Command Prompt
+2. SET PORT=8088
+3. Execute broken-hashserve_win.exe
+4. Using curl application run the following command
 
-This is perhaps the most important part of a test case. 
-
-Keep this section clear and concise (a list would be fine), but don’t leave out any necessary details.
-
-## Expected Result
-
-The expected result tells the tester what they should experience as a result of the test steps.
-
-This is how the tester determines if the test case is a “pass” or “fail”.
-
-# [TC-ID] : Title of the test
-
-## Description
-
-The description should tell the tester what they’re going to test and include any other pertinent information such as the test environment, test data, and preconditions/assumptions.
-
-### Precondition
-
-Any preconditions that must be met prior to the test being executed.
-
-### Assumptions
-
-Any assumptions that apply to the test
-
-## Test Steps
-
-The test steps should include the data and information on how to execute the test.  
-
-This is perhaps the most important part of a test case. 
-
-Keep this section clear and concise (a list would be fine), but don’t leave out any necessary details.
+curl -X POST -H "application/json" -d "{\"password\":\"angrymonkey\"}" http://127.0.0.1:8088/hash
+5. Note the quotes inside the json object needs to be escaped on windows machine.  
+ 
 
 ## Expected Result
 
-The expected result tells the tester what they should experience as a result of the test steps.
+On successful application, the curl should return a hash identifier. If it is the first request then the hash identifier should be 1. 
 
-This is how the tester determines if the test case is a “pass” or “fail”.
+
+
