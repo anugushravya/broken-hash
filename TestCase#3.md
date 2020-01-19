@@ -31,4 +31,6 @@ The curl command should return the base64 encoded password has.  For example, Pa
 
 NN0PAKtieayiTY8/Qd53AeMzHkbvZDdwYYiDnwtDdv/FIWvcy1sKCb7qi7Nu8Q8Cd/MqjQeyCI0pWKDGp74A1g==
 
+![Get Request](hash-get-retreival.PNG)
+
 
