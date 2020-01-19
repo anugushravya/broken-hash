@@ -1,4 +1,4 @@
-# [2] : Get Hash Request
+# [3] : Get Hash Request
 
 ## Description
 
