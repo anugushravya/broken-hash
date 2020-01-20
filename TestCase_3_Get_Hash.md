@@ -6,13 +6,13 @@ A GET to /hash should accept a job identifier.  It should return the base64 enco
 
 ### Precondition
 
-1. The hash application should be listening at PORT 8088 and ready to accept curl request.
-2. A POST has been submitted to the hash application, and it successfully returned a hash identifier. 
+1. The hash application should be listening at PORT 8088 and ready to accept curl requests.
+2. A POST submitted to the hash application, and it successfully returned a hash identifier. 
 
 ### Assumptions
 
-Hash application is running on windows machine.
-Curl is installed on the machine for sending request.
+Hash application is running on a windows machine.
+Curl installed on the machine for sending requests.
 
 ## Test Steps
 
@@ -27,7 +27,7 @@ curl -H "application/json" http://127.0.0.1:8088/hash/1
 
 ## Expected Result
 
-The curl command should return the base64 encoded password has.  For example, Password text "angrybirds" will return
+The curl command should return the base64 encoded password has.  For example, Password text "angrybirds" will return.
 
 NN0PAKtieayiTY8/Qd53AeMzHkbvZDdwYYiDnwtDdv/FIWvcy1sKCb7qi7Nu8Q8Cd/MqjQeyCI0pWKDGp74A1g==
 
