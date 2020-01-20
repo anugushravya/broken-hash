@@ -10,8 +10,8 @@ None
 
 ### Assumptions
 
-Hash application is running on windows machine.
-Curl is installed on the machine to send request.
+Hash application is running on a windows machine.
+Curl is installed on the machine to send the request.
 
 ## Test Steps
 
@@ -24,5 +24,5 @@ Curl is installed on the machine to send request.
 
 ## Expected Result
 
-The service should accept multple API connections simultaneously
+The service should accept multiple API connections simultaneously
 
