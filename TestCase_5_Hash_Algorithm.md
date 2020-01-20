@@ -2,16 +2,16 @@
 
 ## Description
 
-A POST to /hash should accept a password and hash it using SH512 algorithm.
+A POST to /hash should accept a password and hash it using the SHA512 algorithm.
 
 ### Precondition
 
-The hash application should be listening at PORT 8088 and ready to accept curl request
+The hash application should be listening at PORT 8088 and ready to accept curl requests.
 
 ### Assumptions
 
-Hash application is running on windows machine.
-Curl is installed on the machine to send request.
+Hash application is running on a windows machine.
+Curl installed on the machine to send the request.
 
 ## Test Steps
 
@@ -22,7 +22,7 @@ Curl is installed on the machine to send request.
 
 curl -X POST -H "application/json" -d "{\"password\\":\"angrymonkey\"}" http://127.0.0.1:8088/hash
 
-5. Esnure that the quotes inside the json object needs to be escaped on windows machine.  
+5. Make sure to add escape character to the quotes inside  JSON object for request on a windows machine. 
 6. Using curl application run the following command
 
 curl -H "application/json" http://127.0.0.1:8088/hash/1
@@ -31,6 +31,6 @@ curl -H "application/json" http://127.0.0.1:8088/hash/1
 
 ## Expected Result
 
-The API should the return base64 password, encoded using hash SHA512 algorithm.   The base64 password can be validating using any online SHA512 online generators.  
+The API should return the base64 password encoded using the hash SHA512 algorithm.   The base64 password can be validated using any online SHA512 online generators.  
 For example, https://hash.online-convert.com/sha512-generator
 
