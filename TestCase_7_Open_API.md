@@ -2,7 +2,7 @@
 
 ## Description
 
-The broken hashserve program should listen for http connections when opened through command prompt. 
+The broken hashserve program should listen for Http connections when opened through the command prompt. 
 
 ### Precondition
 
@@ -10,8 +10,8 @@ None
 
 ### Assumptions
 
-Hash application is running on windows machine.
-Curl is installed on the machine to send request.
+Hash application is running on a windows machine.
+Curl is installed on the machine to send the request.
 
 ## Test Steps
 
@@ -21,7 +21,7 @@ Curl is installed on the machine to send request.
  
 ## Expected Result
 
-On successful start, the application should wait for http connections 
+On a successful start, the application should wait for Http connections 
 
 ![Post Hash](application-start.PNG)  
 
