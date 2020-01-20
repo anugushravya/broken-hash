@@ -20,7 +20,7 @@ Curl is installed on the machine for sending request.
 2. SET PORT=8088
 3. Execute broken-hashserve_win.exe
 4. Using curl application run the following command
-curl -H "application/json" http://127.0.0.1:8088/status
+curl -H "application/json" http://127.0.0.1:8088/stats
 
 
 ## Expected Result
