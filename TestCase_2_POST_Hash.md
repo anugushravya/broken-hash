@@ -6,12 +6,12 @@ A POST to /hash should accept a password.  It should return a job identifier imm
 
 ### Precondition
 
-The hash application should be listening at PORT 8088 and ready to accept curl request
+The hash application should be listening at PORT 8088 and ready to accept curl requests.
 
 ### Assumptions
 
-Hash application is running on windows machine.
-Curl is installed on the machine to send request.
+Hash application is running on a windows machine.
+Curl is installed on the machine to send the request.
 
 ## Test Steps
 
@@ -22,13 +22,13 @@ Curl is installed on the machine to send request.
 
 curl -X POST -H "application/json" -d "{\"password\\":\"angrymonkey\"}" http://127.0.0.1:8088/hash
 
-5. Esnure that the quotes inside the json object needs to be escaped on windows machine.  
+5. Ensure that the quotes inside the JSON object need an escape character for qutoes on a windows machine.  
  
 ![Post Hash](hash-post-request.PNG)  
 
 ## Expected Result
 
-On successful application, the curl should return a hash identifier. If it is the first request then the hash identifier should be 1. 
+On successful application, the curl should return a hash identifier. If it is the first request, then the hash identifier should be 1. 
 
 
 
